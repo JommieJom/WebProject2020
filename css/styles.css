@@ -1,0 +1,41 @@
+body {
+    margin: 0;
+    text-align: center;
+    font-family: 'Gothic A1', sans-serif;
+    color: #27496d;
+    font-size: 20px;
+}
+
+.top-container {
+    background-color: #beebe9;
+    position: relative;
+    padding-top: 100px;
+}
+
+h1 {
+    margin-top: 0;
+    margin: 0 auto;
+    font-family: 'Dancing Script', cursive;
+    font-size: 80px;
+}
+
+.top-cloud {
+    position: absolute;
+    top: 150px;
+    right: 200px
+
+}
+
+.button1 {background-color: #4CAF50;} /* Green */
+.button2 {background-color: #008CBA;} /* Blue */
+
+.bottom-cloud {
+    position: absolute;
+    top: 300px;
+    left: 200px;
+}
+
+.bottom-container {
+    background-color: rgb(149, 220, 223);
+    padding-top: 100px;
+}
