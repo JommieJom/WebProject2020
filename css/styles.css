@@ -3,6 +3,7 @@
     }
     
     .header {
+        /* box-shadow: 0px 12px 10px -7px #6b78b3; */
         overflow: hidden;
         background-color: #4257b2;
         position: fixed;
@@ -32,7 +33,7 @@
     }
     
     .header a:hover {
-        text-decoration: underline;
+        text-decoration: none;
         color: #99a5d7;
     }
     
@@ -108,9 +109,9 @@
     
     .features {
         position: absolute;
-        background-color: rgb(255, 255, 255);
+        background-color: rgb(121, 40, 40);
         z-index: -1;
-        height: 1500px;
+        height: 100%;
         width: 100%;
-        margin-top: 1070px;
+        margin-top: 800px;
     }
