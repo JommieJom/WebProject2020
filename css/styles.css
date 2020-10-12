@@ -3,6 +3,7 @@
     }
     
     .header {
+        overflow: hidden;
         background-color: #4257b2;
         position: fixed;
         top: 0;
@@ -38,9 +39,8 @@
     .split {
         height: 100%;
         width: 50%;
-        position: fixed;
-        z-index: 1;
-        top: 0;
+        position: absolute;
+        z-index: -1;
         overflow-x: hidden;
         padding-top: 20px;
         margin-top: 70px;
@@ -48,7 +48,7 @@
     
     .left {
         left: 0;
-        background-color: #6177db;
+        background-color: #3b4c9b;
     }
     
     .right {
@@ -107,6 +107,10 @@
     }
     
     .features {
-        background-color: #f2f2f2;
+        position: absolute;
+        background-color: rgb(255, 255, 255);
+        z-index: -1;
         height: 1500px;
+        width: 100%;
+        margin-top: 1070px;
     }
