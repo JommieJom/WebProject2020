@@ -7,8 +7,9 @@ var all_questions = [{
 }, {
     question_string: "Which of the following elements aren’t introduced in HTML5?",
     choices: {
-        correct: "<input>",
-        wrong: ["<article>", "<footer>", "<hgroup>"]
+        // Put tag element in the choice string
+        correct: "input",
+        wrong: ["article", "footer", "hgroup"]
     }
 }, {
     question_string: "How many wheels are there on a tricycle?",
