@@ -7,6 +7,7 @@
 
     <link rel="stylesheet" href="css/homepage/styles.css">
     <link rel="stylesheet" href="css/nav-bar.css">
+    <link rel="stylesheet" href="css/homepage/login-form-styles.css">
 
     <link href="https://fonts.googleapis.com/css?family=Dosis&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet">
@@ -17,10 +18,41 @@
 
 <body>
     <div class="header">
-        <a href="#Login">Login</a>
+        <a href="#Login" onclick="document.getElementById('id01').style.display='block'" style="width:auto;">Login</a>
         <a href="#Features">Features</a>
         <a href="#About us">About us</a>
         <h1>QUZIC</h1>
+    </div>
+
+    <div id="append-form">
+        <div id="id01" class="modal">
+            <form class="modal-content animate" action="/action_page.php" method="post">
+                <div class="imgcontainer">
+                    <span onclick="document.getElementById('id01').style.display='none'" class="close"
+                        title="Close Modal">&times;</span>
+                    <img src="img_avatar2.png" alt="Avatar" class="avatar">
+                </div>
+
+                <div class="container">
+                    <label for="uname"><b>Username</b></label>
+                    <input type="text" placeholder="Enter Username" name="uname" required>
+
+                    <label for="psw"><b>Password</b></label>
+                    <input type="password" placeholder="Enter Password" name="psw" required>
+
+                    <button type="submit">Login</button>
+                    <label>
+                        <input type="checkbox" checked="checked" name="remember"> Remember me
+                    </label>
+                </div>
+
+                <div class="container" style="background-color:#f1f1f1">
+                    <button type="button" onclick="document.getElementById('id01').style.display='none'"
+                        class="cancelbtn">Cancel</button>
+                    <span class="psw">Forgot <a href="#">password?</a></span>
+                </div>
+            </form>
+        </div>
     </div>
 
     <div class="top-container">
@@ -47,19 +79,22 @@
             <div class="feature-row">
                 <img class="feature-pic-left" src="images/slogan1.png" alt="feature-pic1">
                 <h3>Learning</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
             <div class="feature-row">
                 <img class="feature-pic-right" src="images/slogan4.png" alt="feature-pic2">
                 <h3>Quize yourself</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
             <div class="feature-row">
                 <img class="feature-pic-left" src="images/slogan2.png" alt="feature-pic3">
                 <h3>Achievement!</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore
+                    et dolore magna in culpa qui officia deserunt mollit anim id est laborum.</p>
             </div>
 
         </div>
@@ -86,9 +121,6 @@
         <img src="images/facebook-logo.png" alt="facebook" style="width:40px">
         <img src="images/github-logo.png" alt="github" style="width:40px">
 
-
-
-
     </div>
 
     <footer>
@@ -96,5 +128,6 @@
     </footer>
 
 </body>
+<script src="javascripts/home-page-script.js"></script>
 
 </html>

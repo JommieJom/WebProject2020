@@ -24,7 +24,17 @@ var all_questions = [{
     }
 }];
 
+function writeQandA(index) {
+    var question = document.getElementById("question");
+    var choiceList = document.getElementsByClassName("choice-text");
+
+    question.innerHTML = all_questions[index].question_string;
+
+    for (var i = 0; i < 3; ++i) {
+        choiceList[i].innerHTML = all_questions[index].choices.wrong[i];
+    }
+}
+
 questionIndex = Math.floor(Math.random() * 4);
 
-question = document.getElementById("question");
-
+writeQandA(questionIndex);
