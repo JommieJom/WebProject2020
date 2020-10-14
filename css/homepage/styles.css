@@ -1,40 +1,38 @@
+.top-container {
+    display: inline-flex;
+    flex-direction: row;
+}
+
 .split {
-    position: absolute;
+    align-items: center;
+    justify-content: center;
     height: 800px;
     width: 50%;
-    z-index: -1;
-    overflow-x: hidden;
     padding-top: 20px;
     margin-top: 60px;
 }
 
 .left {
-    left: 0;
     background-color: #3b4c9b;
 }
 
 .right {
-    right: 0;
     background-color: #272f50;
 }
 
-.top-container {
-    padding-top: 0px;
-}
-
-.centered {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    text-align: center;
-}
-
 .learn-music-picture {
-    position: absolute;
+    display: flex;
     width: 100%;
     object-fit: contain;
     border-radius: 10%;
+}
+
+.centered {
+    /* position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center; */
 }
 
 .centered h1 {
@@ -44,6 +42,8 @@
 }
 
 .centered h2 {
+    text-align: center;
+    display: flex;
     font-family: 'Righteous';
     font-size: 20px;
     color: #f2f2f2;
@@ -54,6 +54,7 @@
 }
 
 .myButton {
+    z-index: 10;
     box-shadow: 0px 12px 10px -7px #0e8f8f;
     background: linear-gradient(to bottom, #3ccfcf 5%, #3ccfcf 100%);
     background-color: #3ccfcf;
@@ -81,11 +82,8 @@
 
 .middle-container {
     width: 100%;
-    position: absolute;
     background-color: #e1f2fb;
     z-index: -1;
-    margin-top: 700px;
-    margin-bottom: 100px;
     padding-bottom: 100px;
     font-family: 'Dosis';
 }
@@ -136,13 +134,10 @@
 }
 
 .bottom-container {
+    flex-direction: column;
     width: 100%;
     text-align: center;
-    position: absolute;
     background-color: #8db1f3;
-    z-index: -1;
-    margin-top: 2336px;
-    margin-bottom: 100px;
     padding-bottom: 100px;
 }
 
@@ -164,14 +159,10 @@
 }
 
 .about-us {
-    width: 100%;
     text-align: left;
-    position: absolute;
+    flex-direction: column;
     background-color: #3b4c9b;
-    z-index: -1;
-    margin-top: 2818px;
-    margin-bottom: 100px;
-    padding-bottom: 50px;
+    padding-bottom: 30px;
     color: white;
 }
 
@@ -197,11 +188,7 @@
 footer {
     width: 100%;
     text-align: center;
-    position: absolute;
     background-color: #4257b2;
-    z-index: -1;
-    /* margin-top: 3262px; */
-    margin-top: 3183px;
     font-family: 'Dosis';
     color: white;
 }
@@ -213,4 +200,3 @@ hr {
     border-width: 5px;
     width: 5%;
 }
-
