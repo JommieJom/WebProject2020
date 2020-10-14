@@ -4,8 +4,8 @@ var choiceContainer = Array.from(document.getElementsByClassName("choice-contain
 
 let questionList = [{
   id: 1,
-  asked_question: "What is a ?",
-  choices: ["One", "Two", "Three", "Four"],
+  asked_question: "Describe the indicated interval.",
+  choices: ["Augmented 11th", "Perfect 11th", "Compound diminished 5th", "Compound augmented 4th"],
   correct_choice: 1
 },
 {
