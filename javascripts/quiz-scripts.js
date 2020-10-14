@@ -1,41 +1,43 @@
-var all_questions = [{
-    question_string: "What color is the sky?",
-    choices: {
-        correct: "Blue",
-        wrong: ["Pink", "Orange", "Green"]
-    }
-}, {
-    question_string: "Which of the following elements aren’t introduced in HTML5?",
-    choices: {
-        // Put tag element in the choice string
-        correct: "input",
-        wrong: ["article", "footer", "hgroup"]
-    }
-}, {
-    question_string: "How many wheels are there on a tricycle?",
-    choices: {
-        correct: "Three",
-        wrong: ["One", "Two", "Four"]
-    }
-}, {
-    question_string: 'Who is the main character of Harry Potter?',
-    choices: {
-        correct: "Harry Potter",
-        wrong: ["Hermione Granger", "Ron Weasley", "Voldemort"]
-    }
-}];
+var question = document.getElementById('question');
+var choiceList = Array.from(document.getElementsByClassName("choice-text"));
+var choiceContainer = Array.from(document.getElementsByClassName("choice-container"));
+
+let questionList = [{
+  id: 1,
+  asked_question: "What is a ?",
+  choices: ["One", "Two", "Three", "Four"],
+  correct_choice: 1
+},
+{
+  id: 2,
+  asked_question: "What is b ?",
+  choices: ["One 111", "Two 222", "Three 333", "Four 444"],
+  correct_choice: 4
+}, 
+{
+  id: 3,
+  asked_question: "What is c ?",
+  choices: ["111", "T22", "T333", "44444"],
+  correct_choice: 2
+}]
 
 function writeQandA(index) {
-    var question = document.getElementById("question");
-    var choiceList = document.getElementsByClassName("choice-text");
+  
+  question.innerHTML = questionList[index].asked_question;
 
-    question.innerHTML = all_questions[index].question_string;
-
-    for (var i = 0; i < 3; ++i) {
-        choiceList[i].innerHTML = all_questions[index].choices.wrong[i];
-    }
+  for (var i = 0; i < 4; ++i) {
+    choiceList[i].innerText = questionList[index].choices[i];
+  }
 }
 
-questionIndex = Math.floor(Math.random() * 4);
+choiceContainer.forEach((choice) => {
+  choice.addEventListener('click', (e) => {
 
+  questionIndex = Math.floor(Math.random() * 3);
+  writeQandA(questionIndex);
+    console.log("Test");
+  });
+});
+
+questionIndex = Math.floor(Math.random() * 3);
 writeQandA(questionIndex);

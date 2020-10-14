@@ -1,3 +1,6 @@
+.bg-color-quiz {
+  background-color: #e1f2fb;
+}
   .choice-container {
     display: flex;
     margin-bottom: 0.5rem;
@@ -21,6 +24,10 @@
   }
   
   .choice-text {
-    padding: 1.5rem;
+    padding: 1.8rem;
     font-family: 'Dosis';
   }
+
+#question {
+  font-size: 1.8rem;
+}
