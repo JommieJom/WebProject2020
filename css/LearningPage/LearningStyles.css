@@ -1,21 +1,40 @@
-.split {
-    position: absolute;
-    height: 800px;
-    width: 50%;
-    z-index: -1;
-    overflow-x: hidden;
-    padding-top: 20px;
-    margin-top: 60px;
+body {
+    margin: 0;
 }
 
-.left {
-    left: 0;
-    background-color: #3b4c9b;
+.header {
+    /* box-shadow: 0px 12px 10px -7px #6b78b3; */
+    overflow: hidden;
+    background-color: #4257b2;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    height: 70px;
 }
 
-.right {
-    right: 0;
-    background-color: #272f50;
+.header h1 {
+    font-family: 'Righteous';
+    color: #f2f2f2;
+    padding-left: 40px;
+    margin-top: 14px;
+}
+
+.header a {
+    float: right;
+    display: block;
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    font-size: 17px;
+    font-family: 'Dosis';
+    font-weight: bold;
+    padding: 25px 20px;
+    padding-right: 40px;
+}
+
+.header a:hover {
+    text-decoration: none;
+    color: #99a5d7;
 }
 
 .top-container {
@@ -31,10 +50,9 @@
 }
 
 .learn-music-picture {
-    position: absolute;
     width: 100%;
+    height: 100%;
     object-fit: contain;
-    border-radius: 10%;
 }
 
 .centered h1 {
@@ -62,9 +80,9 @@
     cursor: pointer;
     color: #ffffff;
     font-family: 'Dosis';
-    font-size: 20px;
+    font-size: 16px;
     font-weight: bold;
-    padding: 22px 40px;
+    padding: 20px 30px;
     text-decoration: none;
     text-shadow: 0px 0px 0px #ffffff;
 }
@@ -72,31 +90,40 @@
 .myButton:hover {
     background: linear-gradient(to bottom, #2cc1c1 5%, #2cc1c1 100%);
     background-color: #3ccfcf;
+    -ms-transform: scale(1.5); /* IE 9 */
+    -webkit-transform: scale(1.5); /* Safari 3-8 */
+    transform: scale(1.5); 
 }
+
 
 .myButton:active {
     position: relative;
     top: 1px;
 }
 
-.middle-container {
-    width: 100%;
-    position: absolute;
+.buttonRight {
+    float: right;
+}
+
+.buttonLeft {
+    float: left;
+}
+
+
+.content-container {
     background-color: #e1f2fb;
     z-index: -1;
-    margin-top: 700px;
     margin-bottom: 100px;
     padding-bottom: 100px;
     font-family: 'Dosis';
 }
 
-.head {
+.feature-head {
     text-align: center;
     font-family: 'Righteous';
-    /* color: #27496d; */
+    color: #27496d;
     font-size: 50px;
     margin-top: 6%;
-    /* border: 6px dashed #27496d; */
     padding: 20px;
 }
 
@@ -104,12 +131,20 @@
     width: 40%;
     float: left;
     margin-right: 30px;
+    border-radius: 10%;
 }
-
-.feature-pic-right {
+.feature-pic-right1 {
     width: 40%;
     float: right;
     margin-left: 30px;
+    border-radius: 40%;
+}
+
+.feature-pic-right2 {
+    width: 40%;
+    float: right;
+    margin-left: 30px;
+    border-radius: 50%;
 }
 
 .feature-row {
@@ -128,7 +163,6 @@
 .feature-row h3:hover {
     text-decoration: none;
     color: #4257b2;
-    ;
 }
 
 .feature-row p {
@@ -136,74 +170,13 @@
 }
 
 .bottom-container {
-    width: 100%;
-    text-align: center;
     position: absolute;
     background-color: #8db1f3;
     z-index: -1;
-    margin-top: 2336px;
+    margin-top: 2400px;
     margin-bottom: 100px;
     padding-bottom: 100px;
-}
-
-.button {
-    margin-top: 6%;
-}
-
-.button img {
-    border-radius: 10px;
-    /* box-shadow: 10px 12px 5px -5px #6b78b3; */
-    margin-left: 30px;
-}
-
-.button img:hover,
-.button img:focus {
-    text-decoration: none;
-    cursor: pointer;
-    box-shadow: 10px 12px 5px -5px #6b78b3;
-}
-
-.about-us {
-    width: 100%;
-    text-align: left;
-    position: absolute;
-    background-color: #3b4c9b;
-    z-index: -1;
-    margin-top: 2818px;
-    margin-bottom: 100px;
-    padding-bottom: 50px;
-    color: white;
-}
-
-.about-us h1 {
-    font-family: 'Righteous';
-    margin-left: 5%;
-}
-
-.about-us p {
-    font-family: 'Montserrat';
-    margin-left: 5%;
-}
-
-.about-us img {
-    margin-right: 10px;
-}
-
-.about-us img:hover {
-    opacity: 0.7;
-    cursor: pointer;
-}
-
-footer {
-    width: 100%;
-    text-align: center;
-    position: absolute;
-    background-color: #4257b2;
-    z-index: -1;
-    /* margin-top: 3262px; */
-    margin-top: 3183px;
     font-family: 'Dosis';
-    color: white;
 }
 
 hr {
@@ -214,3 +187,12 @@ hr {
     width: 5%;
 }
 
+footer {
+    width: 100%;
+    text-align: center;
+    position: absolute;
+    background-color: #4257b2;
+    z-index: -1;
+    font-family: 'Dosis';
+    color: white;
+}
