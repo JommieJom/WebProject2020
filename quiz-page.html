@@ -18,53 +18,45 @@
 </head>
 
 <body>
-    <div class="header">
-        <a href="index.html">Login</a>
-        <a href="#Features">Features</a>
-        <a href="#About us">About us</a>
-        <h1>QUZIC</h1>
+    <div id="header" class="header">
+        <div class="tab">
+            <a href="#Login" onclick="document.getElementById('id01').style.display='block'"
+                style="width:auto;">Login</a>
+            <a href="#Features">Features</a>
+            <a href="#AboutUs">About us</a>
+        </div>
+        <a style="text-decoration: none;" href="index.html">
+            <h1>QUZIC</h1>
+        </a>
+
     </div>
+
     <div style="height: 70px;"></div>
 
     <div class="bg-color-quiz">
         <div class="container">
             <div id="game" class="justify-center flex-column">
-                <img src="images/quiz1.webp" width=3 0% height=30%>
+                <img src="images/quiz1.webp" height=35% width=35%>
                 <h2 id="question">What is the answer to this questions?</h2>
                 <div class="choice-container">
                     <p class="choice-prefix">A</p>
                     <p class="choice-text">Choice 1</p>
                 </div>
-                <a style="text-decoration: none;" href="index.html">
-                    <h1>QUZIC</h1>
-                </a>
-
-            </div>
-            <div style="height: 70px;"></div>
-
-            <div class="bg-color-quiz">
-                <div class="container">
-                    <div id="game" class="justify-center flex-column">
-                        <h2 id="question">What is the answer to this questions?</h2>
-                        <div class="choice-container">
-                            <p class="choice-prefix">A</p>
-                            <p class="choice-text">Choice 1</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">B</p>
-                            <p class="choice-text">Choice 2</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">C</p>
-                            <p class="choice-text">Choice 3</p>
-                        </div>
-                        <div class="choice-container">
-                            <p class="choice-prefix">D</p>
-                            <p class="choice-text">Choice 4</p>
-                        </div>
-                    </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">B</p>
+                    <p class="choice-text">Choice 2</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">C</p>
+                    <p class="choice-text">Choice 3</p>
+                </div>
+                <div class="choice-container">
+                    <p class="choice-prefix">D</p>
+                    <p class="choice-text">Choice 4</p>
                 </div>
             </div>
+        </div>
+    </div>
 </body>
 <script src="javascripts/quiz-scripts.js"></script>
 
