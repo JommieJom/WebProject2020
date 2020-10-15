@@ -83,7 +83,6 @@
 .middle-container {
     width: 100%;
     background-color: #e1f2fb;
-    z-index: -1;
     padding-bottom: 100px;
     font-family: 'Dosis';
 }
@@ -102,12 +101,14 @@
     width: 40%;
     float: left;
     margin-right: 30px;
+    box-shadow: 10px 12px 5px -5px #838383;
 }
 
 .feature-pic-right {
     width: 40%;
     float: right;
     margin-left: 30px;
+    box-shadow: 10px 12px 5px -5px #838383;
 }
 
 .feature-row {
